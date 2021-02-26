@@ -38,6 +38,10 @@ stages:
     - script: |
         npm install
       displayName: 'npm install'
+    
+    - script: |
+        npm run compile
+      displayName: 'npm compile'
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
